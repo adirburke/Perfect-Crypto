@@ -35,9 +35,13 @@ let package = Package(
 		.library(name: "PerfectCrypto", targets: ["PerfectCrypto"])
 	],
     dependencies: [
-		.package(url: "https://github.com/PerfectlySoft/PerfectLib.git", from: "4.0.0"),
-		.package(url: "https://github.com/PerfectlySoft/Perfect-Thread.git", from: "3.0.0"),
-		.package(url: cOpenSSLRepo, from: "4.0.0")
+		// .package(url: "https://github.com/PerfectlySoft/PerfectLib.git", from: "4.0.0"),
+		.package(path: "~/Dev/Perfect/Perfect"),
+		// .package(url: "https://github.com/PerfectlySoft/Perfect-Thread.git", from: "3.0.0"),
+		.package(path: "~/Dev/Perfect/Perfect-Thread"),
+		.package(path: "~/Dev/Perfect/Perfect-COpenSSL"),
+		// .package(url: cOpenSSLRepo, from: "4.0.0")
+
 	],
 	targets: [
 		.target(name: "PerfectCrypto", dependencies: ["PerfectLib", "PerfectThread", "COpenSSL"]),
