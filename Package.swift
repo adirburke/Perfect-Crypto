@@ -36,10 +36,10 @@ let package = Package(
 	],
     dependencies: [
 		// .package(url: "https://github.com/PerfectlySoft/PerfectLib.git", from: "4.0.0"),
-		.package(path: "~/Dev/Perfect/Perfect"),
+		.package(path: "../Perfect"),
 		// .package(url: "https://github.com/PerfectlySoft/Perfect-Thread.git", from: "3.0.0"),
-		.package(path: "~/Dev/Perfect/Perfect-Thread"),
-		.package(path: "~/Dev/Perfect/Perfect-COpenSSL"),
+		.package(path: "../Perfect-Thread"),
+		.package(path: "../Perfect-COpenSSL"),
 		// .package(url: cOpenSSLRepo, from: "4.0.0")
 
 	],
